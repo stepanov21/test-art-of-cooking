@@ -26,9 +26,10 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   height: 100vh;
-  &.overflow-hidden {
+  .overflow-hidden {  
     @include tablet {
       overflow-y: hidden;
+      height: 100%;
     }
   }
 }
