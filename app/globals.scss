@@ -26,6 +26,15 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   height: 100vh;
+  &.overflow-hidden {
+    @include tablet {
+      overflow-y: hidden;
+    }
+  }
+}
+
+li {
+  cursor: pointer;
 }
 
 button {
@@ -343,11 +352,13 @@ a {
     text-transform: none;
     font-size: 17px;
     font-weight: 700;
+    margin-left: 10px;
   }
   &__count {
     font-size: 13px;
     font-weight: 700;
     color: #9C9C9C;
+    margin-left: 6px;
   }
   &__title {
     text-transform: none;
@@ -604,7 +615,7 @@ a {
         text-transform: none;
       }
     }
-    position: absolute;
+    position: fixed;
     width: 80vw;
     height: 100vh;
     border: none;
