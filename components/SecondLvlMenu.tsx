@@ -24,8 +24,8 @@ const SecondLvlMenu = ({
         <h3>Напої</h3>
       </header>
       <ul {...props} className="header__second-lvl-catalog" id="second-menu">
-        {dataSecondLvlCatalog.map((item) => (
-          <MenuItem>{item}</MenuItem>
+        {dataSecondLvlCatalog.map((item, key) => (
+          <MenuItem key={key}>{item}</MenuItem>
         ))}
       </ul>
       <div

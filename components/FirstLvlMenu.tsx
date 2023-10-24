@@ -41,8 +41,9 @@ const FirstLvlMenu: React.FC<
         <h3>Меню каталога</h3>
       </header>
       <ul {...props} className="header__first-lvl-catalog">
-        {dataFirstLvlCatalog.map((item) => (
+        {dataFirstLvlCatalog.map((item, key) => (
           <MenuItem
+            key={key}
             onClick={() => setSecondMobileMenu && setSecondMobileMenu(true)}>
             {item}
           </MenuItem>
